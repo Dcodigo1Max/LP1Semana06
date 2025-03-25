@@ -14,7 +14,23 @@ namespace MyGame
             this.name = name;
             health = 100;
             shield =0;
+        }
 
+        public string GetName()
+        {
+            return name;
+        }
+
+        public void TakeDamaje(float damage)
+        {
+            shield -= damage;
+            if (shield<0)
+            {
+                float damageStillToinflict =-shield;
+                shield = 0;
+                health -= damageStillToinflict;
+                if (health<0) health = 0;
+            }
         }
 
 
