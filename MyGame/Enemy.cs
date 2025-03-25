@@ -47,10 +47,7 @@ namespace MyGame
 
         public string SetName()
         {
-
-            
-
-            return;
+            return name;
         }
 
 
