@@ -1,3 +1,5 @@
+using System;
+using System.Dynamic;
 using System.Runtime.CompilerServices;
 
 namespace MyGame
@@ -21,6 +23,16 @@ namespace MyGame
             return name;
         }
 
+        public string GetHealth()
+        {
+            return Convert.ToString(health);
+        }
+
+         public string GetShield()
+        {
+            return Convert.ToString(shield);
+        }
+
         public void TakeDamaje(float damage)
         {
             shield -= damage;
@@ -32,6 +44,16 @@ namespace MyGame
                 if (health<0) health = 0;
             }
         }
+
+        public string SetName()
+        {
+
+            
+
+            return;
+        }
+
+
 
 
     } 
