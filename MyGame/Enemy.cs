@@ -1,5 +1,7 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Dynamic;
+using System.Net;
 using System.Runtime.CompilerServices;
 
 namespace MyGame
@@ -13,7 +15,7 @@ namespace MyGame
         public Enemy(string name)
         {
         
-            this.name = name;
+            SetName(name);
             health = 100;
             shield =0;
         }
@@ -45,18 +47,23 @@ namespace MyGame
             }
         }
 
-        public string SetName()
+        public void SetName(string name)
         {
-            return name;
+            this.name=name;
+            if ( name.Length >8)
+            {
+                Console.WriteLine(name.Remove(9));
+            }
+            else
+                {
+                    Console.WriteLine(name);
+                }
+
         }
-
-
 
 
     } 
     
-
-
 
 }
 
