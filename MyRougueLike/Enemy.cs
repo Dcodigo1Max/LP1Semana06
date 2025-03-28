@@ -13,6 +13,16 @@ namespace MyRougueLike
             Shield
         }
 
+    public enum Thoughness
+        {
+            VeryEasy,
+            Easy,
+            Normal,
+            Though,
+            Nightmare
+
+        }
+
    public class Enemy
     {
         private string name;
@@ -112,11 +122,22 @@ namespace MyRougueLike
         } 
 
 
+        public class Level
+        {
+            public void SetEnmyInRoom()
+            {
 
+
+            }
+
+
+        }
 
 
     } 
-    
+
+
+
 
 }
 
