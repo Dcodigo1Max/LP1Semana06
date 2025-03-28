@@ -6,22 +6,20 @@ namespace RandDice
     {
         private static void Main(string[] args)
         {
-            Random dice = new Random(6);
+            int roll =0;
+                       
+            int start = int.Parse(args[0]);
+            int seed = int.Parse(args[1]);
 
-            for (int n=0; n<=6; n++)
-                Console.WriteLine(dice.Next());
-            
+            Random dice = new Random(seed);
+
+            for (int i = 0; i <= start; i++)
+            {
+                roll += dice.Next(1, 7); 
+            }
+            Console.WriteLine(roll);
              
-            /*
-            Random r1 = new Random(22);
-            Random r2 = new Random(22);
-            
-            for (int i = 0; i < 4; i++)
-                Console.WriteLine(r1.Next());
-            Console.WriteLine();
-            for (int i = 0; i < 4; i++)
-                Console.WriteLine(r2.Next());
-            */
+           
 
         }
     }
