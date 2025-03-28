@@ -124,12 +124,39 @@ namespace MyRougueLike
 
         public class Level
         {
-            public void SetEnmyInRoom()
-            {
+            private int nrooms;
 
+            private int lvl;
+
+            private string thoughness;
+
+
+            public Level(string thoughness, int nrooms, int lvl)
+            {
+                this.thoughness=thoughness;
+                this.nrooms = nrooms;
+                this.lvl =6;
+                
+                //int size = int.Parse([6]);
 
             }
 
+            public void SetEnmyInRoom()
+            {
+
+                
+
+            }
+
+
+            public void PrintEnemies()
+            {
+                int size = int.Parse([0]);
+                Thoughness[]array = new Thoughness[size];
+
+
+            }        
+            
 
         }
 
