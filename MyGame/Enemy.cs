@@ -70,6 +70,16 @@ namespace MyGame
                 }
         }
 
+        public static int GetPowerUps()
+        {
+            return powerUpsCollected;
+        }
+        
+        static Enemy()
+        {
+            powerUpsCollected = 0;
+        }
+
 
 
         public void PickupPowerUp(PowerUp powerUp ,float value)
@@ -91,7 +101,12 @@ namespace MyGame
                 {
                     shield = 100;
                 }
+                
+                
+            
             }
+           
+           powerUpsCollected++; 
             
             
         } 
