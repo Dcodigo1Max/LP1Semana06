@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandDice", "RandDice\RandDi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGame", "MyGame\MyGame.csproj", "{2E682D36-B43C-4A81-8A51-4DC78EBDB036}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRougueLike", "MyRougueLike\MyRougueLike.csproj", "{413438E9-CBF7-467C-9BB3-4DAECB0F9205}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{2E682D36-B43C-4A81-8A51-4DC78EBDB036}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E682D36-B43C-4A81-8A51-4DC78EBDB036}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E682D36-B43C-4A81-8A51-4DC78EBDB036}.Release|Any CPU.Build.0 = Release|Any CPU
+		{413438E9-CBF7-467C-9BB3-4DAECB0F9205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{413438E9-CBF7-467C-9BB3-4DAECB0F9205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{413438E9-CBF7-467C-9BB3-4DAECB0F9205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{413438E9-CBF7-467C-9BB3-4DAECB0F9205}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
