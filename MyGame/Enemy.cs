@@ -6,11 +6,19 @@ using System.Runtime.CompilerServices;
 
 namespace MyGame
 {    
+
+    public enum PowerUp
+        {
+            Health,
+            Shield
+        }
+
    public class Enemy
     {
         private string name;
         private float health;
         private float shield;
+
 
         public Enemy(string name)
         {
@@ -35,7 +43,9 @@ namespace MyGame
             return Convert.ToString(shield);
         }
 
-        public void TakeDamaje(float damage)
+        
+
+        public void TakeDamage(float damage)
         {
             shield -= damage;
             if (shield<0)
@@ -58,8 +68,36 @@ namespace MyGame
                 {
                     Console.WriteLine(name);
                 }
-
         }
+
+
+
+        public void PickupPowerUp(PowerUp powerUp ,float value)
+        {
+            if (powerUp == PowerUp.Health)
+            {
+                health = health + value;
+                if (health > 100)
+                {
+                    health = 100;
+                }
+            }
+        
+
+            if (powerUp == PowerUp.Shield)
+            {
+                shield = shield + value;
+                if (shield > 100)
+                {
+                    shield = 100;
+                }
+            }
+            
+            
+        } 
+
+
+
 
 
     } 
