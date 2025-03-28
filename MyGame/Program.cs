@@ -6,19 +6,27 @@ namespace MyGame
     {
         private static void Main(string[] args)
         {
-            args = new string[10];
+            int size = int.Parse(args[0]);
 
-            Enemy loki = new Enemy("Loki");
-            Enemy DarthVader = new Enemy("Darth Vader");
-            Enemy Yami = new Enemy("Yugi");
-            Enemy Nolan = new Enemy("Omni-man");
+            Enemy[]array = new Enemy[size];
 
-            loki.SetName(" Grindalokki");
-            DarthVader.SetName("Vader");
-            Yami.SetName("King of Games");
-            Nolan.SetName("Space invader");
-             
-            //string loki = sore[2];
+            for(int i = 0; i<size; i++)
+            {
+                Console.Write($"Nome do inimigo {i + 1}:");
+                string name = Console.ReadLine();
+                array[i] = new Enemy(name);
+            }
+
+              foreach (Enemy name in array)
+            {
+                Console.WriteLine($"{name.GetName()} {name.GetHealth()} {name.GetShield()} ");
+            }
+
+
+            
+
+
+            
             
 
         }
