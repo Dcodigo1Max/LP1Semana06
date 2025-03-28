@@ -4,7 +4,7 @@ using System.Dynamic;
 using System.Net;
 using System.Runtime.CompilerServices;
 
-namespace MyGame
+namespace MyRougueLike
 {    
 
     public enum PowerUp
